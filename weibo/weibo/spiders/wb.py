@@ -7,7 +7,7 @@ from pyquery import PyQuery as pq
 class WbSpider(scrapy.Spider):
     name = 'wb'
     allowed_domains = ['weibo.com']
-    start_urls = ['https://m.weibo.cn/u/1312066630']
+    start_urls = ['https://m.weibo.cn/p/second?containerid=1078031312066630_38171257984613010000001312066630_-_albumface&page=1&count=24&title=%E9%9D%A2%E5%AD%94%E4%B8%93%E8%BE%91&luicode=10000011&lfid=1078031312066630']
     
     def __init__(self):
 

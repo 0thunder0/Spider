@@ -47,14 +47,14 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
-    'weibo.middlewares.WeiboSpiderMiddleware': 543,
-    'weibo.UAmiddlewares.RandomUAMiddleware':500,
+   # 'weibo.middlewares.WeiboSpiderMiddleware': 543,
 }
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'weibo.middlewares.WeiboDownloaderMiddleware': 543,
+ #   'weibo.middlewares.WeiboDownloaderMiddleware': 543,
+    'weibo.UAmiddlewares.RandomMobUAMiddleware':500,
 }
 
 # Enable or disable extensions

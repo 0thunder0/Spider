@@ -11,10 +11,10 @@
   <script>
   var config = {
     env: 'prod',
-    st: 'a16b4f',
+    st: 'a96834',
     login: [][0],
     uid: '',
-    pageConfig: [null][0] || {},
+    pageConfig: [{"type":"uid","value":"1312066630"}][0] || {},
     preferQuickapp: 0,
     wm: '',
     version: 'v2.1.32'

@@ -48,6 +48,7 @@ ROBOTSTXT_OBEY = True
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 SPIDER_MIDDLEWARES = {
     'weibo.middlewares.WeiboSpiderMiddleware': 543,
+    'weibo.UAmiddlewares.RandomUAMiddleware':500,
 }
 
 # Enable or disable downloader middlewares

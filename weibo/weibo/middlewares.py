@@ -47,7 +47,7 @@ class WeiboSpiderMiddleware(object):
         # Called with the start requests of the spider, and works
         # similarly to the process_spider_output() method, except
         # that it doesn’t have a response associated.
-
+        print('开始运行中间件中的程序SpiderMiddleware：',start_requests)
         # Must return only requests (not items).
         for r in start_requests:
             yield r
@@ -92,7 +92,7 @@ class WeiboDownloaderMiddleware(object):
     def process_exception(self, request, exception, spider):
         # Called when a download handler or a process_request()
         # (from other downloader middleware) raises an exception.
-
+        print('正在执行中间件：DownloadMiddleWare')
         # Must either:
         # - return None: continue processing this exception
         # - return a Response object: stops process_exception() chain

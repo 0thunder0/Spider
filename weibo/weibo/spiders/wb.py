@@ -2,12 +2,12 @@
 import scrapy,time,random
 from selenium import webdriver
 from pyvirtualdisplay import Display
-from pyquery import PyQurey as pq
+from pyquery import PyQuery as pq
 
 class WbSpider(scrapy.Spider):
     name = 'wb'
     allowed_domains = ['weibo.com']
-    start_urls = ['http://weibo.com/']
+    start_urls = ['http://m.weibo.com/']
 
     def __init__(self):
         print('正在打开浏览器………………')
@@ -22,4 +22,4 @@ class WbSpider(scrapy.Spider):
         self.display.stop()
 
     def parse(self, response):
-        pass
+        print('正在执行爬虫………………')

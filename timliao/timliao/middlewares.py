@@ -71,7 +71,7 @@ class TimliaoDownloaderMiddleware(object):
     def process_request(self, request, spider):
         # Called for each request that goes through the downloader
         # middleware.
-
+        print(333333333333333333333333333)
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object

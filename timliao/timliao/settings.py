@@ -54,7 +54,7 @@ ROBOTSTXT_OBEY = True
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-#    'timliao.middlewares.TimliaoDownloaderMiddleware': 543,
+    'timliao.middlewares.TimliaoDownloaderMiddleware': 543,
     'timliao.MW.RandomUAMiddleware':500,
 }
 

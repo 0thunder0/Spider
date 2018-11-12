@@ -1,0 +1,18 @@
+1542025464495	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vYKv56i7fSV6"
+1542025472168	Marionette	INFO	Listening on port 40343
+1542025472258	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542025709435	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UFQUOAkV6DIl"
+1542025715712	Marionette	INFO	Listening on port 42359
+1542025715800	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 4987, Gecko_IOThread] WARNING: pipe error (79): 连接被对方重设: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542025759607	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.vkvvz8JzHnwU"
+1542025764925	Marionette	INFO	Listening on port 44241
+1542025764959	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 5115, Gecko_IOThread] WARNING: pipe error (76): 连接被对方重设: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542025917146	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.JZFciisbX37Q"
+1542025924082	Marionette	INFO	Listening on port 41021
+1542025924135	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

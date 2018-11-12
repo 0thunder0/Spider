@@ -16,3 +16,22 @@
 1542025924082	Marionette	INFO	Listening on port 41021
 1542025924135	Marionette	WARN	TLS certificate errors will be ignored for this session
 *** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542026126629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.7dAZuJBxpIX5"
+1542026140059	Marionette	INFO	Listening on port 42503
+1542026140437	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 5664, Gecko_IOThread] WARNING: pipe error (63): 连接被对方重设: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542026375307	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oam9EufapVjL"
+1542026397134	Marionette	INFO	Listening on port 44355
+1542026397653	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: jar:file:///usr/lib/firefox/omni.ja!/components/nsUrlClassifierListManager.js, line 589: TypeError: this.tablesData[table] is undefined
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542026538970	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2Zt3G2GdTFrB"
+1542026568031	Marionette	INFO	Listening on port 46275
+1542026568335	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1542026668406	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Hbvw3stvkUVy"
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15642, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 15622, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356

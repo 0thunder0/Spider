@@ -1,5 +1,6 @@
 from selenium import webdriver
 from pyquery import PyQuery as pq
+import time,random
 
 def xici_demo():
     browser=webdriver.Firefox()
@@ -8,7 +9,8 @@ def xici_demo():
     req=pq(browser.page_source)
     print(type(req))
     ip_table=req('.country td')
-    print(ip_table)    
+    time.sleep(15)
+    print(ip_table)
     browser.close()
     browser.quit()
 

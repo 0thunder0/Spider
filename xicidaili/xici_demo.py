@@ -1,21 +1,29 @@
 from selenium import webdriver
 from pyquery import PyQuery as pq
+from pyvirtualdisplay import Display
 import time,random
 
 def xici_demo():
     t=random.randint(15,30)
-    browser=webdriver.Firefox()
+    display=Display(visible=0,size=(1600,1000))
+    display.start()
+    
+    browser=webdriver.Chrome()
     browser.get('http://www.xicidaili.com/nn/')
-    #print(browser.page_source)
-    req=pq(browser.page_source)
-    #print(type(req))
-    ip_table=req('#ip_list tr td:eq(1)').items()
     time.sleep(t)
-    for it in ip_table:
-        print(it.text())
-    #print(ip_table.text())
+
+    req=pq(browser.page_source)
+    #print(req)
+    ip_tables=req('#ip_list tbody tr')
+    print(ip_tables)
+    for data in ip_tables:
+        print('data数据：',data)
+        print('完整IP地址：')
+    
+    
     browser.close()
     browser.quit()
+    display.stop()
 
 if __name__ =='__main__':
     xici_demo()

@@ -25,6 +25,7 @@ class XiciSpider(scrapy.Spider):
         self.display.stop()
 
     def parse(self, response):
+        print(response.body)
         pq_source=pq(response.body)
         ip_table=pq_source('.odd .country td').items()
         for i in ip_table:

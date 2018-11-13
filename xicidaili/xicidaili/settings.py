@@ -54,7 +54,7 @@ ROBOTSTXT_OBEY = True
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
 #    'xicidaili.middlewares.XicidailiDownloaderMiddleware': 543,
-    'xicidaili.middlewares_userAgent.RandomUAMiddleware':500,
+#    'xicidaili.middlewares_userAgent.RandomUAMiddleware':500,
     'xicidaili.middlewares_Chrome.chromemiddlewares':500
 }
 

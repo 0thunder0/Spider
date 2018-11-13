@@ -15,6 +15,6 @@ class chromemiddlewares(object):
             return HtmlResponse(
                     url=spider.browser.current_url,
                     body=spider.browser.page_source,
-                    encoding='utf-8',             
+                    encoding='UTF-8',             
                     request=request
                     )

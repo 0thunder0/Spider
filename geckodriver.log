@@ -1,4 +1,0 @@
-1541860242946	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.4NtwLjHUrR81"
-1541860247644	Marionette	INFO	Listening on port 39233
-1541860247917	Marionette	WARN	TLS certificate errors will be ignored for this session
-*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

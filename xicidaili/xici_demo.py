@@ -5,11 +5,11 @@ import time,random
 
 def xici_demo():
     t=random.randint(15,30)
-    display=Display(visible=0,size=(1600,1000))
-    display.start()
+    #display=Display(visible=0,size=(1600,1000))
+    #display.start()
     
-    #browser=webdriver.Firefox()
-    browser=webdriver.Chrome()
+    browser=webdriver.Firefox()
+    #browser=webdriver.Chrome()
     browser.get('http://www.xicidaili.com/nn/')
     time.sleep(t)
 
@@ -19,7 +19,7 @@ def xici_demo():
     for tab in ip_tables:
         ip=tab('td:eq(1)').text()
         port=tab('td:eq(2)').text()
-        print('完整IP地址：',ip+port)
+        print('完整IP地址：',ip+':'+port)
         addr=tab('td:eq(3) a').text()
         alive_time=tab('td:eq(8)').text()
         print('地址：',addr,'存活时间：',alive_time)
@@ -27,7 +27,7 @@ def xici_demo():
     
     browser.close()
     browser.quit()
-    display.stop()
+    #display.stop()
 
 if __name__ =='__main__':
     xici_demo()

@@ -69,7 +69,8 @@ ITEM_PIPELINES = {
 #    'MadeInChina.pipelines.MadeinchinaPipeline': 300,
     'MadeInChina.mongo_pipelines.MongoPipeline': 300,
 }
-
+MONGO_URI="127.0.0.1:27017"
+MONGO_DATABASE="MadeInChina_mongo"
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True

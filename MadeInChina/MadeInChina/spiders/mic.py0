@@ -52,3 +52,4 @@ class MicSpider(scrapy.Spider):
                 items['website']=com_value
             else:
                 print('无效的数据')
+		yield items

@@ -10,7 +10,7 @@ class PythzSpider(scrapy.Spider):
     img_cache=[]
     ut_cache=[]
     utFileCache=[]
-    for x in range(1,2):
+    for x in range(1,20):
         start_urls.append('http://thzbt.co/forum-181-%s.html' %x)
         start_urls.append('http://thzbt.co/forum-220-%s.html' %x)
     def parse(self, response):
@@ -32,15 +32,10 @@ class PythzSpider(scrapy.Spider):
         #创建下载文件夹
         fname=ut_name.split('-',1)[0].split('[')[-1]
         fpath=os.getcwd()+'/utFile/'+fname
-        #print('种子保存文件夹：%s' %fpath)
-        if os.path.exists('fpath') is False:
+        if os.path.exists(fpath) is False:
             print('创建文件夹：%s' %fpath)
             os.makedirs(fpath)
         
-        #if fpath not in self.utFileCache:
-        #    self.utFileCache.append(fpath)
-        #    os.makedirs(fpath)
-            
         ut_path='http://thzbt.co/'+response.xpath('//p[@class="attnm"]/a/@href').extract()[0]
         ut_download_path='http://thzbt.co/forum.php?mod=attachment&'+ut_path.split('?')[-1]
         ut_pic_name=ut_name.split(']',1)[0]+']'

@@ -31,11 +31,24 @@ class MicSpider(scrapy.Spider):
         items['com_contact_detail']='联系人信息：'
         com_contacts=s_data('.contact-customer .contact-customer-info .info-detail div').items()
         for com_contact in com_contacts:
-            #items['com_contact_name']=com_contact('.info-name').text()
-            #items['com_contact_detail']=items['com_contact_detail']+com_contact('.info-item').text()
+            items['com_contact_name']=com_contact('.info-name').text()
+            items['com_contact_detail']=items['com_contact_detail']+com_contact('.info-item').text()
+            print(items['com_contact_name'],items['com_contact_detail'])
         for detail_data in s_data('.contact-block .contact-info .info-item').items():
-            com_key=detail_data('.info-label').text()
-            
-            com_value=detail_data('.info-fields').text()
-
-            print('联系我们数据：',com_key,com_value)
+            com_key=detail_data('.info-label').text().replace(' ','')
+            com_value=detail_data('.info-fields').text().replace(' ','')
+            print('前缀：',com_key,'后缀：',com_value)
+            if com_key=='Address:':
+                items['address']=com_value
+            elif com_key=='Local Time:':
+                items['local_time']=com_value
+            elif com_key=='Telephone:':
+                items['telephone']=com_value
+            elif com_key=='Mobile Phone:':
+                items['mobile_phone']=com_value
+            elif com_key=='Fax:':
+                items['fax']=com_value
+            elif com_key=='Website:':
+                items['website']=com_value
+            else:
+                print('无效的数据')

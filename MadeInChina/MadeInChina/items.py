@@ -9,7 +9,7 @@ import scrapy
 
 class MadeinchinaItem(scrapy.Item):
     # define the fields for your item here like:
-    Address      = scrapy.Field()
+    address      = scrapy.Field()
     local_time   = scrapy.Field()
     telephone    = scrapy.Field()
     mobile_phone = scrapy.Field()

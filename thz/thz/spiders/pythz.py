@@ -10,7 +10,7 @@ class PythzSpider(scrapy.Spider):
     img_cache=[]
     ut_cache=[]
     utFileCache=[]
-    for x in range(1,20):
+    for x in range(1,50):
         start_urls.append('http://thzbt.co/forum-181-%s.html' %x)
         start_urls.append('http://thzbt.co/forum-220-%s.html' %x)
     def parse(self, response):

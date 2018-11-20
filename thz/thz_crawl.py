@@ -14,7 +14,7 @@ def crawl_func(func):
 def zip_func():
     #os.popen('scrapy crawl pythz')
     #创建压缩文件
-    #stime=random.randint(1800,3600)
+    stime=random.randint(1800,3600)
     print('爬虫执行结束，现在暂停%s秒……………………………………' %stime)
     #time.sleep(stime)
     today=time.strftime("%Y%m%d", time.localtime())

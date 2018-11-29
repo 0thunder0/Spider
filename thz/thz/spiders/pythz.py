@@ -10,9 +10,10 @@ class PythzSpider(scrapy.Spider):
     img_cache=[]
     ut_cache=[]
     utFileCache=[]
-    for x in range(1,50):
-        start_urls.append('http://thzbt.co/forum-181-%s.html' %x)
-        start_urls.append('http://thzbt.co/forum-220-%s.html' %x)
+    for x in range(1,13):
+        start_urls.append('http://thzbt.co/forum-222-%s.html' %x)
+        #start_urls.append('http://thzbt.co/forum-181-%s.html' %x)
+        #start_urls.append('http://thzbt.co/forum-220-%s.html' %x)
     def parse(self, response):
         n=0
         for pages in response.xpath('//tr/td[@class="icn"]'):

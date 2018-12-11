@@ -7,7 +7,7 @@ class DairySpider(scrapy.Spider):
     name = 'dairy'
     allowed_domains = ['jdailyhk.com']
     start_urls = []
-    for i in range(1,2):
+    for i in range(1,197):
         start_urls.append('https://jdailyhk.com/page/%s/' %i)
 
     def parse(self, response):
@@ -24,7 +24,6 @@ class DairySpider(scrapy.Spider):
         ins_urls=page_data('.td-post-content a').items()
         for ins_url in ins_urls:
             ins=ins_url.attr('href')
-            print(ins)
-            with open('aaa.txt','a+') as f:
-                f.writelines(ins)
-                f.write('\n')
+            if ins.split('.')[-1] != 'jpg':
+                with open('aaa.txt','a+') as f:
+                    f.write(ins+'\n')

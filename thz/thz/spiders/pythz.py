@@ -5,15 +5,15 @@ from thz.items import ThzItem
 
 class PythzSpider(scrapy.Spider):
     name = 'pythz'
-    allowed_domains = ['thzbt.co',]
+    allowed_domains = ['thzthz.cc',]
     start_urls = []
     img_cache=[]
     ut_cache=[]
     utFileCache=[]
     for x in range(1,13):
-        start_urls.append('http://thzbt.co/forum-222-%s.html' %x)
-        #start_urls.append('http://thzbt.co/forum-181-%s.html' %x)
-        #start_urls.append('http://thzbt.co/forum-220-%s.html' %x)
+        start_urls.append('http://thzthz.cc/forum-222-%s.html' %x)
+        #start_urls.append('http://thzthz.cc/forum-181-%s.html' %x)
+        #start_urls.append('http://thzthz.cc/forum-220-%s.html' %x)
     def parse(self, response):
         n=0
         for pages in response.xpath('//tr/td[@class="icn"]'):
@@ -22,7 +22,7 @@ class PythzSpider(scrapy.Spider):
             if len(page_urls):
             #print(pages)
                 print('抓取到的第%s个网址：' %n,page_urls[0])
-                page_url="http://thzbt.co/"+page_urls[0]
+                page_url="http://thzthz.cc/"+page_urls[0]
                 req=scrapy.Request(page_url,self.detail_parse)
                 req.meta['item']=ThzItem()            
                 yield req
@@ -37,8 +37,8 @@ class PythzSpider(scrapy.Spider):
             print('创建文件夹：%s' %fpath)
             os.makedirs(fpath)
         
-        ut_path='http://thzbt.co/'+response.xpath('//p[@class="attnm"]/a/@href').extract()[0]
-        ut_download_path='http://thzbt.co/forum.php?mod=attachment&'+ut_path.split('?')[-1]
+        ut_path='http://thzthz.cc/'+response.xpath('//p[@class="attnm"]/a/@href').extract()[0]
+        ut_download_path='http://thzthz.cc/forum.php?mod=attachment&'+ut_path.split('?')[-1]
         ut_pic_name=ut_name.split(']',1)[0]+']'
 
         pic_urls=response.xpath('//div[@id="postlist"]//img[@class="zoom"]/@file').extract()

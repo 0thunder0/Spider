@@ -11,9 +11,9 @@ class PythzSpider(scrapy.Spider):
     ut_cache=[]
     utFileCache=[]
     for x in range(1,13):
-        start_urls.append('http://thzthz.cc/forum-222-%s.html' %x)
+        #start_urls.append('http://thzthz.cc/forum-222-%s.html' %x)
         #start_urls.append('http://thzthz.cc/forum-181-%s.html' %x)
-        #start_urls.append('http://thzthz.cc/forum-220-%s.html' %x)
+        start_urls.append('http://thzthz.cc/forum-220-%s.html' %x)
     def parse(self, response):
         n=0
         for pages in response.xpath('//tr/td[@class="icn"]'):
@@ -26,6 +26,7 @@ class PythzSpider(scrapy.Spider):
                 req=scrapy.Request(page_url,self.detail_parse)
                 req.meta['item']=ThzItem()            
                 yield req
+
     def detail_parse(self,response):
         item=response.meta['item']
         ut_name=response.xpath('//span[@id="thread_subject"]/text()').extract()[0]

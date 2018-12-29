@@ -5,15 +5,15 @@ from thz.items import ThzItem
 
 class PythzSpider(scrapy.Spider):
     name = 'pythz'
-    allowed_domains = ['thzthz.cc',]
+    allowed_domains = ['thz2.cc',]
     start_urls = []
     img_cache=[]
     ut_cache=[]
     utFileCache=[]
     for x in range(1,13):
-        #start_urls.append('http://thzthz.cc/forum-222-%s.html' %x)
-        #start_urls.append('http://thzthz.cc/forum-181-%s.html' %x)
-        start_urls.append('http://thzthz.cc/forum-220-%s.html' %x)
+        #start_urls.append('http://thz2.cc/forum-222-%s.html' %x)
+        #start_urls.append('http://thz2.cc/forum-181-%s.html' %x)
+        start_urls.append('http://thz2.cc/forum-220-%s.html' %x)
     def parse(self, response):
         n=0
         for pages in response.xpath('//tr/td[@class="icn"]'):

@@ -22,7 +22,7 @@ class PythzSpider(scrapy.Spider):
             if len(page_urls):
             #print(pages)
                 print('抓取到的第%s个网址：' %n,page_urls[0])
-                page_url="http://thzthz.cc/"+page_urls[0]
+                page_url="http://thz2.cc/"+page_urls[0]
                 req=scrapy.Request(page_url,self.detail_parse)
                 req.meta['item']=ThzItem()            
                 yield req
@@ -38,8 +38,8 @@ class PythzSpider(scrapy.Spider):
             print('创建文件夹：%s' %fpath)
             os.makedirs(fpath)
         
-        ut_path='http://thzthz.cc/'+response.xpath('//p[@class="attnm"]/a/@href').extract()[0]
-        ut_download_path='http://thzthz.cc/forum.php?mod=attachment&'+ut_path.split('?')[-1]
+        ut_path='http://thz2.cc/'+response.xpath('//p[@class="attnm"]/a/@href').extract()[0]
+        ut_download_path='http://thz2.cc/forum.php?mod=attachment&'+ut_path.split('?')[-1]
         ut_pic_name=ut_name.split(']',1)[0]+']'
 
         pic_urls=response.xpath('//div[@id="postlist"]//img[@class="zoom"]/@file').extract()

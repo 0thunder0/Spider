@@ -5,16 +5,16 @@ import urllib.request
 
 class ThzWifeSpider(scrapy.Spider):
     name = 'thz_wife'
-    allowed_domains = ['thzbt.co']
+    allowed_domains = ['thz2.cc']
     start_urls = []
     for num in range(1,14):
-        start_urls.append('http://thzbt.co/forum-222-%s.html' %num)
+        start_urls.append('http://thz2.cc/forum-222-%s.html' %num)
 
     def parse(self, response):
         data=pq(response.body)
         urls=data('#waterfall li').items()
         for url in urls:
-            u='http://thzbt.co/'+url('a').attr('href')
+            u='http://thz2.cc/'+url('a').attr('href')
             req=scrapy.Request(u,self.parse_detail)
             yield req
     def parse_detail(self,response):
@@ -37,6 +37,6 @@ class ThzWifeSpider(scrapy.Spider):
                 urllib.request.urlretrieve(img,file_name+'/'+str2+'_'+str(nu)+'.jpg')
                 nu=nu+1
         #下载种子
-        bt_urls='http://thzbt.co/forum.php?mod=attachment&'+html_data('ignore_js_op span a').attr('href').split('?')[-1]
+        bt_urls='http://thz2.cc/forum.php?mod=attachment&'+html_data('ignore_js_op span a').attr('href').split('?')[-1]
         print(bt_urls)
         urllib.request.urlretrieve(bt_urls,file_name+'/'+str2+'.torrent')

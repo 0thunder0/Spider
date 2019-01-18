@@ -5,7 +5,7 @@ from thz.items import ThzItem
 
 class PythzSpider(scrapy.Spider):
     name = 'pythz'
-    allowed_domains = ['thz2.cc',]
+    allowed_domains = ['thzvv.net',]
     start_urls = []
     img_cache=[]
     ut_cache=[]

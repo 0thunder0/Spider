@@ -63,3 +63,120 @@ JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=15487657
 
 ###!!! [Child][MessageChannel] Error: (msgtype=0x980006,name=PWebSocket::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
 
+1548767058391	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.guwIj9NOgNC2"
+1548767066880	Marionette	INFO	Listening on port 42065
+1548767066971	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:3676): dconf-WARNING **: 21:04:43.699: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767131669, line 139: unreachable code after return statement
+1548767306493	Marionette	INFO	Stopped listening on port 42065
+1548767655126	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Eddq3gSoYzjd"
+1548767663370	Marionette	INFO	Listening on port 44923
+1548767663488	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:3969): dconf-WARNING **: 21:14:42.026: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548767724697, line 139: unreachable code after return statement
+1548767880569	Marionette	INFO	Stopped listening on port 44923
+1548768285730	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.S8UpxbjkAgBU"
+1548768329503	Marionette	INFO	Listening on port 39185
+1548768329664	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+
+(/usr/lib/firefox/firefox:4189): dconf-WARNING **: 21:26:13.299: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=4e8a3fa55413d657, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548768470992, line 139: unreachable code after return statement
+[Parent 4117, Gecko_IOThread] WARNING: pipe error (95): 连接被对方重设: file /build/firefox-MtV3KQ/firefox-63.0+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1548768749700	Marionette	INFO	Stopped listening on port 39185
+1548768984974	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zdpbcHZtdFXg"
+1548769020301	Marionette	INFO	Listening on port 42995
+1548769020959	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+
+(/usr/lib/firefox/firefox:4418): dconf-WARNING **: 21:38:11.961: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=70a4e8cf3e155837, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=201901292150, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=201901292150, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=201901292150, line 1: unreachable code after return statement
+JavaScript warning: https://js2.t.sinajs.cn/t6/webim_prime/js/common/all.js?version=201901292150, line 1: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 139: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 172: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 198: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 200: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 207: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 174: unreachable code after return statement
+JavaScript warning: https://js.t.sinajs.cn/t6/webim_prime/js/webim.js?v=1548769189244, line 139: unreachable code after return statement
+[Parent 4330, Gecko_IOThread] WARNING: pipe error (78): 连接被对方重设: file /build/firefox-MtV3KQ/firefox-63.0+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1548769467679	Marionette	INFO	Stopped listening on port 42995

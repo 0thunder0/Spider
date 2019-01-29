@@ -1,5 +1,5 @@
 #coding:utf-8
-import time,random,urllib
+import time,random,urllib,os
 from pyquery import PyQuery as pq
 from selenium import webdriver
 #from pyvirtualdisplay import Display
@@ -18,23 +18,21 @@ time.sleep(random.randint(10,20))
 driver.get('https://weibo.com/p/1005052109243041/photos')
 #用js控制下拉
 js='document.documentElement.scrollTop=10000'
-driver.execute_script(js)
-time.sleep(60)
-driver.execute_script(js)
-time.sleep(60)
-driver.execute_script(js)
-time.sleep(60)
-driver.execute_script(js)
-time.sleep(60)
+for i in range(1,10):
+    if i==9:
+        break
+    driver.execute_script(js)
+    time.sleep(60)
 page_source=driver.page_source
 data=pq(page_source)
+
 img_urls=data('.photo_module .photo_cont a img').items()
 n=0
 for img_cache in img_urls:
     img_url=img_cache.attr('src').split('?')[0]
     img_url=img_url.replace('//wxt.sinaimg.cn/thumb300','https://wx2.sinaimg.cn/large')
     n=n+1
-    urllib.request.urlretrieve(img_url,'/home/kylin/文档/sp/weibo/'+img_url.split('/')[-1])
+    urllib.request.urlretrieve(img_url,os.getcwd()+'/'+img_url.split('/')[-1])
     print('正在采集第%s个微博图片' %n,img_url)
 
 time.sleep(random.randint(10,30))

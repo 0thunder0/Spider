@@ -27,6 +27,7 @@ data=pq(page_source)
 title=driver.title
 wb_file=title.split('的')[0]
 fpath=os.getcwd()+'/'+wb_file
+#创建文件夹
 if os.path.exists(fpath) is False:
     os.makedirs(fpath)
 
@@ -44,4 +45,5 @@ time.sleep(random.randint(10,30))
 #driver.get_screenshot_as_file('weibo_screenshot.png')
 #打印微博的标题和源代码
 driver.close()
+driver.quit()
 #display.stop()

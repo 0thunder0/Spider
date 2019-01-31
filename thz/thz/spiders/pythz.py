@@ -12,7 +12,7 @@ class PythzSpider(scrapy.Spider):
     utFileCache=[]
     for x in range(1,10):
         #start_urls.append('http://thzvv.net/forum-222-%s.html' %x)
-        start_urls.append('http://thzvv.net/forum-181-%s.html' %x)
+        #start_urls.append('http://thzvv.net/forum-181-%s.html' %x)
         start_urls.append('http://thzvv.net/forum-220-%s.html' %x)
     def parse(self, response):
         n=0

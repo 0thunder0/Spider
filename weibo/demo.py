@@ -15,12 +15,15 @@ driver.find_element_by_name('password').send_keys('0thunder0')
 #driver.find_element_by_link_text('<span node-type="submitStates"">登录</span>').click()
 driver.find_element_by_xpath('//div[@id="pl_login_form"]//div[@class="info_list login_btn"]/a').click()
 time.sleep(random.randint(10,20))
+#打开微博网址列表
+
+#driver.get('https://weibo.com/p/1005052109243041/photos')
 driver.get('https://weibo.com/p/1005052109243041/photos')
 #用js控制下拉
 js='document.documentElement.scrollTop=10000'
-for i in range(1,2):
+for i in range(1,90):
     driver.execute_script(js)
-    time.sleep(60)
+    time.sleep(random.randint(10,20))
 page_source=driver.page_source
 data=pq(page_source)
 

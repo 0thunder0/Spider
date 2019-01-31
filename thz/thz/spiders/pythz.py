@@ -10,7 +10,7 @@ class PythzSpider(scrapy.Spider):
     img_cache=[]
     ut_cache=[]
     utFileCache=[]
-    for x in range(1,15):
+    for x in range(1,10):
         #start_urls.append('http://thzvv.net/forum-222-%s.html' %x)
         start_urls.append('http://thzvv.net/forum-181-%s.html' %x)
         start_urls.append('http://thzvv.net/forum-220-%s.html' %x)

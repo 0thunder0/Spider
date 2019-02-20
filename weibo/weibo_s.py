@@ -66,7 +66,7 @@ for current_handle in handles:
     n=0
     for img_cache in img_urls:
         img_url=img_cache.attr('src').split('?')[0]
-        new_img_url_head='https://wx'+str(random.randint(2,4))+'.sinaimg.cn/large'
+        new_img_url_head='https://wx'+str(random.randint(2,3))+'.sinaimg.cn/large'
         new_img_url=img_url.replace('//wxt.sinaimg.cn/thumb300',new_img_url_head)
         n=n+1
         img_download_path=fpath+'/'+new_img_url.split('/')[-1]

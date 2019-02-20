@@ -6,6 +6,7 @@ from selenium.webdriver.common.keys import Keys
 #from pyvirtualdisplay import Display
 #display=Display(visible=0,size=(800,800))
 #display.start()
+
 driver=webdriver.Firefox()
 driver.get('https://passport.weibo.cn/signin/login')
 time.sleep(random.randint(10,25))

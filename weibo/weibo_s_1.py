@@ -16,12 +16,12 @@ driver.find_element_by_name('password').send_keys('0thunder0')
 driver.find_element_by_xpath('//div[@id="pl_login_form"]//div[@class="info_list login_btn"]/a').click()
 time.sleep(random.randint(5,15))
 
-
 #读取微博网址列表
 weibo_url_list=[]
 with open('weibo_url.txt','r+') as f:
     for url in f:
         weibo_url_list.append(url.replace('\n',''))
+print(weibo_url_list)
 #批量打开微博网址
 for url in weibo_url_list:
     js='window.open'+'("'+url+'")'
@@ -29,49 +29,17 @@ for url in weibo_url_list:
     time.sleep(random.randint(5,10))
 #判断当前页是否是是否是需要的页面
 xyz=1
-handles=driver.window_handles
 window_1=driver.current_window_handle
+handles=driver.window_handles
 for current_handle in handles:
-    #if current_handle != window_1:
-    #    driver.switch_to.window(current_handle)
+#    if current_handle != window_1:
+#        driver.switch_to.window(current_handle)
     if xyz==1:
         xyz=xyz+1
         driver.close()
         continue
     driver.switch_to.window(current_handle)
     print(driver.title)
-    driver.find_element_by_xpath('//div[@id="Pl_Official_Nav__2"]//td[2]/a').click()
-    time.sleep(random.randint(5,15))
-#用js控制下拉
-    js='document.documentElement.scrollTop=9000'
-    num=1
-    for i in range(1,30):
-        driver.execute_script(js)
-        time.sleep(random.randint(1,5))
-        print('开始下拉%s次' %num)
-        num=num+1
-    page_source=driver.page_source
-    data=pq(page_source)
-#获取博客标题作为文件夹名称
-    title=driver.title
-    wb_file=title.split('的')[0]
-    fpath=os.getcwd()+'/'+wb_file
-#创建文件夹
-    if os.path.exists(fpath) is False:
-        os.makedirs(fpath)
-#下载图片
-    img_urls=data('.photo_module .photo_cont a img').items()
-    n=0
-    for img_cache in img_urls:
-        img_url=img_cache.attr('src').split('?')[0]
-        new_img_url_head='https://wx'+str(random.randint(1,5))+'.sinaimg.cn/large'
-        new_img_url=img_url.replace('//wxt.sinaimg.cn/thumb300',new_img_url_head)
-        n=n+1
-        print('正在采集第%s个微博图片' %n,new_img_url)
-        urllib.request.urlretrieve(new_img_url,fpath+'/'+new_img_url.split('/')[-1])
-
-    print(wb_file)
-    time.sleep(random.randint(10,30))
     driver.close()
 #driver.get_screenshot_as_file('weibo_screenshot.png')
 driver.quit()

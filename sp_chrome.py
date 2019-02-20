@@ -22,8 +22,10 @@ handles=browser.window_handles
 for current_handle in handles:
     if current_handle != window_1:
         browser.switch_to.window(current_handle)
-    title=browser.title
-    print(title)
+    print(browser.title)
+    file_name=browser.title+'.txt'
+    with open(file_name,'a+') as f:
+        f.write(browser.page_source)
     browser.close()
 browser.quit()
 #display.stop()

@@ -78,3 +78,51 @@ JavaScript error: https://mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/js/qq_b
 1548839086479	Marionette	INFO	Stopped listening on port 44541
 JavaScript error: resource://gre/modules/osfile/osfile_async_front.jsm, line 410: Error: OS.File has been shut down. Rejecting post to stat
 1548839113895	Marionette	INFO	Stopped listening on port 37491
+1550651893310	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.ukosjhdVmoRK"
+1550651894558	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550651894559	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550651900619	Marionette	INFO	Listening on port 40399
+1550651900749	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+JavaScript error: https://mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/js/qq_b3c3d741.js, line 1: TypeError: s is undefined
+1550651932115	Marionette	INFO	Stopped listening on port 40399
+1550652221052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.suVM37e6DEfE"
+1550652222325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550652222325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550652228480	Marionette	INFO	Listening on port 45455
+1550652228581	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+JavaScript error: https://mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/js/qq_b3c3d741.js, line 1: TypeError: s is undefined
+
+(/usr/lib/firefox/firefox:32331): dconf-WARNING **: 16:44:23.828: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+1550652346671	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.BJ6GUO7Zy5mg"
+1550652347912	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550652347913	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550652354199	Marionette	INFO	Listening on port 34107
+1550652354360	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/js/qq_b3c3d741.js, line 1: TypeError: s is undefined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+1550652380355	Marionette	INFO	Stopped listening on port 34107
+[Parent 32269, Gecko_IOThread] WARNING: pipe error (81): 连接被对方重设: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+1550652711980	Marionette	INFO	Stopped listening on port 45455

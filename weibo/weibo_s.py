@@ -6,16 +6,15 @@ from selenium import webdriver
 #display=Display(visible=0,size=(800,800))
 #display.start()
 driver=webdriver.Firefox()
-driver.get('https://weibo.com/login.php')
+driver.get('https://passport.weibo.cn/signin/login')
 time.sleep(random.randint(10,25))
 #登录微博
-driver.find_element_by_id('loginname').clear()
-driver.find_element_by_id('loginname').send_keys('13276710110')
-driver.find_element_by_name('password').send_keys('0thunder0')
+driver.find_element_by_id('loginName').clear()
+driver.find_element_by_id('loginName').send_keys('13276710110')
+driver.find_element_by_id('loginPassword').send_keys('0thunder0')
 #driver.find_element_by_link_text('<span node-type="submitStates"">登录</span>').click()
-driver.find_element_by_xpath('//div[@id="pl_login_form"]//div[@class="info_list login_btn"]/a').click()
+driver.find_element_by_id('loginAction').click()
 time.sleep(random.randint(5,15))
-
 
 #读取微博网址列表
 weibo_url_list=[]
@@ -39,7 +38,8 @@ for current_handle in handles:
         driver.close()
         continue
     driver.switch_to.window(current_handle)
-    print(driver.title)
+    #print(driver.title)
+    time.sleep(random.randint(10,25))
     driver.find_element_by_xpath('//div[@id="Pl_Official_Nav__2"]//td[2]/a').click()
     time.sleep(random.randint(5,15))
 #用js控制下拉
@@ -54,8 +54,8 @@ for current_handle in handles:
     data=pq(page_source)
 #获取博客标题作为文件夹名称
     title=driver.title
-    wb_file=title.split('的')[0]
-    fpath=os.getcwd()+'/'+wb_file
+    wb_title=title.split('的')[0]
+    fpath=os.getcwd()+'/'+wb_title
 #创建文件夹
     if os.path.exists(fpath) is False:
         os.makedirs(fpath)
@@ -64,13 +64,14 @@ for current_handle in handles:
     n=0
     for img_cache in img_urls:
         img_url=img_cache.attr('src').split('?')[0]
-        new_img_url_head='https://wx'+str(random.randint(1,5))+'.sinaimg.cn/large'
+        new_img_url_head='https://wx'+str(random.randint(2,5))+'.sinaimg.cn/large'
         new_img_url=img_url.replace('//wxt.sinaimg.cn/thumb300',new_img_url_head)
         n=n+1
-        print('正在采集第%s个微博图片' %n,new_img_url)
-        urllib.request.urlretrieve(new_img_url,fpath+'/'+new_img_url.split('/')[-1])
+        img_download_path=fpath+'/'+new_img_url.split('/')[-1]
+        print('正在采集第%s个微博图片' %n,new_img_url,img_download_path)
+        urllib.request.urlretrieve(new_img_url,img_download_path)
 
-    print(wb_file)
+    print(wb_title)
     time.sleep(random.randint(10,30))
     driver.close()
 #driver.get_screenshot_as_file('weibo_screenshot.png')

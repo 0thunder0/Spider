@@ -2,6 +2,7 @@
 import time,random,urllib,os
 from pyquery import PyQuery as pq
 from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 #from pyvirtualdisplay import Display
 #display=Display(visible=0,size=(800,800))
 #display.start()
@@ -45,9 +46,10 @@ for current_handle in handles:
 #用js控制下拉
     js='document.documentElement.scrollTop=9000'
     num=1
-    for i in range(1,30):
-        driver.execute_script(js)
-        time.sleep(random.randint(1,5))
+    for i in range(1,3):
+        #driver.execute_script(js)
+        driver.find_element_by_css_selector('body').send_keys(Keys.END)
+        time.sleep(random.randint(2,7))
         print('开始下拉%s次' %num)
         num=num+1
     page_source=driver.page_source
@@ -64,12 +66,17 @@ for current_handle in handles:
     n=0
     for img_cache in img_urls:
         img_url=img_cache.attr('src').split('?')[0]
-        new_img_url_head='https://wx'+str(random.randint(2,5))+'.sinaimg.cn/large'
+        new_img_url_head='https://wx'+str(random.randint(2,4))+'.sinaimg.cn/large'
         new_img_url=img_url.replace('//wxt.sinaimg.cn/thumb300',new_img_url_head)
         n=n+1
         img_download_path=fpath+'/'+new_img_url.split('/')[-1]
-        print('正在采集第%s个微博图片' %n,new_img_url,img_download_path)
+        print('正在采集第%s个微博图片' %n,new_img_url,type(new_img_url),img_download_path,type(img_download_path))
         urllib.request.urlretrieve(new_img_url,img_download_path)
+#        try:
+#            print('正在下载图片：',new_img_url)
+#            urllib.request.urlopen(new_img_url)
+#        except error.HPPPError as e:
+#            print(e.code)
 
     print(wb_title)
     time.sleep(random.randint(10,30))

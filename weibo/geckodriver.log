@@ -1510,3 +1510,103 @@ console.error: BroadcastService:
 bail@chrome://marionette/content/sync.js:196:64
 1550666055239	Marionette	INFO	Stopped listening on port 46289
 1550666058141	Marionette	INFO	Stopped listening on port 33565
+1550677383661	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.cOUnROSRTpdk"
+1550677387439	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550677387439	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550677401573	Marionette	INFO	Listening on port 42837
+1550677401911	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:10119): dconf-WARNING **: 23:43:43.144: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+[Parent 9993, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1550677494919	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+JavaScript error: https://js1.t.sinajs.cn/t6/home/js/pl/lib.js?version=0cf3a38a6885267e, line 3: TypeError: f is null
+1550677596414	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.63NIDdUCCa6P"
+1550677600258	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550677600259	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550677615825	Marionette	INFO	Listening on port 39557
+1550677616315	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:10341): dconf-WARNING **: 23:47:25.602: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+[Parent 10228, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1550677699576	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+1550677936035	Marionette	INFO	Stopped listening on port 39557
+1550678048427	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.l75Lb4u8DfKc"
+1550678051217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550678051218	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550678067464	Marionette	INFO	Listening on port 41547
+1550678067618	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:10597): dconf-WARNING **: 23:54:52.972: Unable to open /var/lib/snapd/desktop/dconf/profile/user: 权限不够
+[Parent 10482, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1550678130899	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+JavaScript error: https://js2.t.sinajs.cn/t6/page/js/pl/content/homeFeed/index.js?version=0cf3a38a6885267e, line 250: TypeError: j is null
+[Parent 10482, Gecko_IOThread] WARNING: pipe error (86): 连接被对方重设: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 349
+1550678309831	Marionette	INFO	Stopped listening on port 41547
+1550678315705	Marionette	INFO	Stopped listening on port 42837
+1550679568502	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.np0fRXCatpmb"
+1550679569496	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550679569504	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550679577187	Marionette	INFO	Listening on port 37727
+1550679577327	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+[Parent 11434, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1550679648359	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:196:64
+JavaScript error: https://js2.t.sinajs.cn/t6/page/js/pl/content/homeFeed/index.js?version=ccbc9dfbb011c8f1, line 250: TypeError: j is null
+1550679923417	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tcf07uLRru0m"
+1550679924617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550679924624	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550679929587	Marionette	INFO	Listening on port 38371
+1550679929724	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+[Parent 11630, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1550680061313	Marionette	INFO	Stopped listening on port 38371
+1550680062830	Marionette	INFO	Stopped listening on port 37727
+1550680069233	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.N9T47uyF996r"
+1550680070920	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550680070924	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550680076824	Marionette	INFO	Listening on port 34661
+1550680076957	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 11820, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+JavaScript error: https://js2.t.sinajs.cn/t6/page/js/pl/content/homeFeed/index.js?version=ccbc9dfbb011c8f1, line 205: ReferenceError: V is not defined
+1550680191141	Marionette	INFO	Stopped listening on port 34661
+1550680274644	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IKyNVj61FW6R"
+1550680276059	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550680276065	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550680281986	Marionette	INFO	Listening on port 36897
+1550680282127	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:188:13
+
+[Parent 11995, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+1550680383793	Marionette	INFO	Stopped listening on port 36897
+1550680432944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DnTkS1X6ggeC"
+1550680434265	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: resource://pdf.js/
+1550680434274	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid host permission: about:reader*
+1550680441912	Marionette	INFO	Listening on port 46121
+1550680442014	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 12186, Gecko_IOThread] WARNING: pipe error: 断开的管道: file /build/firefox-nSunSF/firefox-65.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 718
+JavaScript error: https://js2.t.sinajs.cn/t6/page/js/pl/content/homeFeed/index.js?version=ccbc9dfbb011c8f1, line 205: ReferenceError: V is not defined
+1550680658275	Marionette	INFO	Stopped listening on port 46121

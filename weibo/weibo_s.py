@@ -1,5 +1,6 @@
 #coding:utf-8
 import time,random,urllib,os
+from urllib import error
 from pyquery import PyQuery as pq
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -27,7 +28,7 @@ with open('weibo_url.txt','r+') as f:
 for url in weibo_url_list:
     js='window.open'+'("'+url+'")'
     driver.execute_script(js)
-    time.sleep(random.randint(5,10))
+    time.sleep(random.randint(5,15))
 #判断当前页是否是是否是需要的页面
 xyz=1
 handles=driver.window_handles
@@ -42,12 +43,14 @@ for current_handle in handles:
     driver.switch_to.window(current_handle)
     #print(driver.title)
     time.sleep(random.randint(10,25))
-    driver.find_element_by_xpath('//div[@id="Pl_Official_Nav__2"]//td[2]/a').click()
-    time.sleep(random.randint(5,15))
+    try:
+        driver.find_element_by_xpath('//div[@id="Pl_Official_Nav__2"]//td[2]/a').click()
+    except:
+        continue
 #用js控制下拉
     js='document.documentElement.scrollTop=9000'
     num=1
-    for i in range(1,3):
+    for i in range(1,70):
         #driver.execute_script(js)
         driver.find_element_by_css_selector('body').send_keys(Keys.END)
         time.sleep(random.randint(2,7))
@@ -63,24 +66,22 @@ for current_handle in handles:
     if os.path.exists(fpath) is False:
         os.makedirs(fpath)
 #下载图片
+    img_download_urls=[]
     img_urls=data('.photo_module .photo_cont a img').items()
-    n=0
     for img_cache in img_urls:
-        img_url=img_cache.attr('src').split('?')[0]
-        new_img_url_head='https://wx'+str(random.randint(2,3))+'.sinaimg.cn/large'
-        new_img_url=img_url.replace('//wxt.sinaimg.cn/thumb300',new_img_url_head)
+        img_url=img_cache.attr('src').split('?')[0].split('/')[-1]
+        new_img_url='https://wx2.sinaimg.cn/large/'+img_url
+        img_download_urls.append(new_img_url)
+    n=1
+    for imgUrl in img_download_urls:
+        img_download_path=fpath+'/'+imgUrl.split('/')[-1]
+        try:
+            print('正在下载图片%s/%s：' %(n,len(img_download_urls)),imgUrl)
+            urllib.request.urlretrieve(imgUrl,img_download_path)
+        except :
+            continue
         n=n+1
-        img_download_path=fpath+'/'+new_img_url.split('/')[-1]
-        print('正在采集第%s个微博图片' %n,new_img_url,type(new_img_url),img_download_path,type(img_download_path))
-        urllib.request.urlretrieve(new_img_url,img_download_path)
-#        try:
-#            print('正在下载图片：',new_img_url)
-#            urllib.request.urlopen(new_img_url)
-#        except error.HPPPError as e:
-#            print(e.code)
-
-    print(wb_title)
-    time.sleep(random.randint(10,30))
+    time.sleep(random.randint(8,15))
     driver.close()
 #driver.get_screenshot_as_file('weibo_screenshot.png')
 driver.quit()
